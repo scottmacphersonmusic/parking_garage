@@ -13,4 +13,10 @@ class ParkingGarage
     # Total Monthly - ...
     # Total Hourly - ...
   end
+
+  private
+
+  def generate_levels
+    # Initialize 5 level objects
+  end
 end
