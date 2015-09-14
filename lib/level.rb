@@ -3,7 +3,7 @@ class Level
 
   def initialize(level_num, type)
     @level_num = level_num
-    @type = type
+    @type = type # monthly or hourly
     @spaces = generate_spaces
   end
 
