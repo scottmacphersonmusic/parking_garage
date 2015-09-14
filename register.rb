@@ -16,6 +16,7 @@ class Register
   end
 
   def calculate_bill
-    # Compare current time to time ticket was issued and calculate the price
+    # Compare current time to time ticket was issued and calculate price
+    # based on ticket type
   end
 end
