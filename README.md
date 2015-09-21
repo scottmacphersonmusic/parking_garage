@@ -1,4 +1,4 @@
-# parking_garage
+# Parking_garage
 By [Scott Macpherson](https://github.com/scottmacphersonmusic)
 ### Description
 **parking_garage** is an object-oriented model of a parking garage.
@@ -14,5 +14,14 @@ This will generate 5 new `Level` objects and a `Register` object.  The register 
 
 which all inherit from `Space`.
 
+The parking garage is now aware of `Vehicle` objects.  A vehicle has instance attributes:
+- `@size`
+  - *[compact or standard]*
+- `@handicapped`
+  - *a boolean*
+- `@ticket`
+  - *vehicles MUST have a ticket*
+
+If space is available, a `Vehicle` will be assigned to a `Space` corresponding to its `@size` and `@handicapped` attributes.  It has methods `#park` and `#exit`, which correspond to methods of the same name on `Space` objects and are used to update the `@vacancy` attribute of a given `Space`.
 ### UML Diagram
 ![UML Diagram](uml_diagram.JPG)
